@@ -1,6 +1,11 @@
 #include <iostream>
 using namespace std;
 
+// Hàm trừ hai số
+int subtract(int x, int y) {
+    return x - y;
+}
+
 int main() {
     int a, b;
 
@@ -12,9 +17,8 @@ int main() {
     cout << "Nhập số b: ";
     cin >> b;
 
-    // Hiển thị kết quả
-    cout << "Số a là: " << a << endl;
-    cout << "Số b là: " << b << endl;
+    // Hiển thị kết quả trừ
+    cout << "Hiệu của a và b là: " << subtract(a, b) << endl;
 
     return 0;
 }
